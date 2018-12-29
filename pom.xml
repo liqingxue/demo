@@ -11,6 +11,8 @@
 	<groupId>com.hexagon</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -18,12 +20,24 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<fine.version>10.0</fine.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-tomcat</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		    <scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
@@ -79,6 +93,67 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<!-- fineReport -->
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-accumulator</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-activator</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-core</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-datasource</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-decision</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-decision-report</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-report-engine</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-schedule</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-schedule-report</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-swift-log-adaptor</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-third</artifactId>
+			<version>${fine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fine</groupId>
+			<artifactId>fine-webui</artifactId>
+			<version>${fine.version}</version>
 		</dependency>
 	</dependencies>
 
